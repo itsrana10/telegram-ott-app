@@ -1,3 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OTT App</title>
+
+<style>
+body{
+    background:#111;
+    color:white;
+    font-family:Arial;
+    margin:0;
+}
+
+.header{
+    padding:15px;
+    text-align:center;
+    background:#e50914;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.movie{
+    margin:15px;
+    background:#222;
+    border-radius:10px;
+    overflow:hidden;
+    padding-bottom:15px;
+}
+
+.movie img{
+    width:100%;
+}
+
+.movie h3{
+    padding:10px;
+}
+
+.btn{
+    margin-left:10px;
+    padding:10px 20px;
+    border:none;
+    border-radius:5px;
+    background:#e50914;
+    color:white;
+    font-size:16px;
+}
+</style>
+</head>
+
+<body>
+
 <div class="header">
 🎬 My OTT App
 </div>
@@ -6,13 +59,16 @@
 <img src="https://via.placeholder.com/600x300">
 <h3>Movie 1</h3>
 
-<button onclick="playMovie()">
+<button class="btn" onclick="watchMovie()">
 ▶ Watch Now
 </button>
 </div>
 
 <script>
-function playMovie(){
-window.location.href="player.html";
+function watchMovie(){
+    alert("Button Working");
 }
 </script>
+
+</body>
+</html>
