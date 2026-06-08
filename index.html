@@ -3,20 +3,20 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OTT App</title>
+<title>CineBox BD</title>
 
 <style>
 body{
     background:#111;
     color:white;
-    font-family:Arial;
+    font-family:Arial,sans-serif;
     margin:0;
 }
 
 .header{
+    background:#e50914;
     padding:15px;
     text-align:center;
-    background:#e50914;
     font-size:24px;
     font-weight:bold;
 }
@@ -26,25 +26,27 @@ body{
     background:#222;
     border-radius:10px;
     overflow:hidden;
-    padding-bottom:15px;
 }
 
 .movie img{
     width:100%;
+    display:block;
 }
 
 .movie h3{
     padding:10px;
+    margin:0;
 }
 
 .btn{
-    margin-left:10px;
+    margin:10px;
     padding:10px 20px;
     border:none;
     border-radius:5px;
     background:#e50914;
     color:white;
     font-size:16px;
+    cursor:pointer;
 }
 </style>
 </head>
@@ -52,23 +54,18 @@ body{
 <body>
 
 <div class="header">
-🎬 My OTT App
+🎬 CineBox BD
 </div>
 
 <div class="movie">
-<img src="https://via.placeholder.com/600x300">
-<h3>Movie 1</h3>
+<img src="https://via.placeholder.com/600x300?text=Movie+1">
+<h3>🎬 Movie 1</h3>
 
-<button class="btn" onclick="watchMovie()">
+<button class="btn"
+onclick="window.open('https://t.me/CineBox_BD_Bot?start=movie1')">
 ▶ Watch Now
 </button>
 </div>
-
-<script>
-function watchMovie(){
-    alert("Button Working");
-}
-</script>
 
 </body>
 </html>
